@@ -1,0 +1,115 @@
+/* Red Velvet Pág Inicial */
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.box {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    height: 100%; 
+    padding: 10px;
+    margin: 29.8% 0% 0%;
+    box-shadow: 2px 2px 30px black;
+}
+
+.box2 {
+    position: relative;
+    text-align: center;
+    background-color: #ffcfe2;
+    height: 100%; 
+    padding: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.fixed {
+    position: fixed;
+    left:0px
+	right:65px
+    top: 45px;
+}
+
+.img {
+    border-color: gray;
+}
+
+.span {
+    background-color: rgba(101,101,101,0.8);
+}
+
+.size {
+    font-size: 18px;
+}
+@media screen and (max-width:1050px) {
+
+    html {
+        zoom: 150%;
+    }
+
+    body {
+        background-position: center top;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .img {
+        border-color: gray;
+        width: 90%;
+        height: 90%;
+    }
+
+    .size {
+        font-size: 10px;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .box {
+        position: relative;
+        text-align: center;
+        background-color: white;
+        height: 100%; 
+        padding: 10px;
+        margin: 29.8% 0% 0%;
+        box-shadow: 2px 2px 30px black;
+    }
+
+    .box2 {
+        position: relative;
+        text-align: center;
+        background-color: #ffcfe2;
+        height: 100%; 
+        padding: 10px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div.fixed {
+        position: fixed;
+        left:0px;
+        right:65px;
+        top: 45px;
+    }
+
+    .video {
+        width: 90%;
+        height: 330px;
+    }
+}

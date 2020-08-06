@@ -1,0 +1,111 @@
+.container1 {
+	position: relative;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	padding: 0%;
+}
+
+.container2 {
+	position: relative;
+	background-color: rgba(91, 217, 118, 0.7);
+	width: 100%;
+	height: 25%;
+	padding: 0%;
+	margin: 32% 0% 0% 0%;
+	box-shadow: -1px -15px 20px black;
+}
+
+.container3 {
+	position: relative;
+	background-color: rgba(91, 217, 118, 0.7);
+	width: 100%;
+	height: 25%;
+	padding: 0%;
+}
+
+#img {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	vertical-align: top;
+	left: 0px;
+	top: 0px;
+}
+
+#img1,#img2,#img3,#img4 {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	vertical-align: top;
+	left: 0px;
+	top: 0px;
+	display: none;
+}
+
+#irene:hover+#img1 {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	vertical-align: top;
+	left: 0px;
+	top: 0px;
+	display: block;
+}
+
+#seulgi:hover+#img2 {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	vertical-align: top;
+	left: 0px;
+	top: 0px;
+	display: block;
+}
+
+#wendy:hover+#img3 {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	vertical-align: top;
+	left: 0px;
+	top: 0px;
+	display: block;
+}
+
+#yeri:hover+#img4 {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	vertical-align: top;
+	left: 0px;
+	top: 0px;
+	display: block;
+}
+
+.insta {
+	color: black;
+	text-decoration: underline;
+}
+
+.insta:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+map {
+	width: 100%;
+	height: 100%;
+}
+
+area {
+	cursor: pointer;
+}
+
+iframe {
+	border: none;
+	vertical-align: center;
+	margin: 2%;
+}
+/* <a id="area1" class="area" href="#"></a>
+<a id="area2" class="area" href="#"></a> */

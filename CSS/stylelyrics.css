@@ -1,0 +1,31 @@
+/* Red Velvet HTML Website */
+
+/* Lyrics Page */
+a.titles:link, a.titles:visited{
+  text-decoration: none;
+  color: black;
+  }
+  
+a.titles:hover{
+  color: red;
+  }
+
+ .container1 {
+ 	background-color: white;
+ 	box-shadow: -1px -15px 20px black;
+	margin: 29.8% 0% 0%;
+ }
+
+.container2 {
+  border-left: none;
+  border-right: none;
+  border-top: 10px dotted lightpink;
+  border-bottom: none;
+ }
+
+ .element {
+	text-shadow: 2px 2px 0 darkred,
+             	-1px 1px 0 darkred,
+   				1px -1px 0 darkred,
+				-1px -1px 0 darkred;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="CSS/styleall.css">
+<link rel="stylesheet" type="text/css" href="CSS/styledisc.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="shortcut icon" href="Images/RV.png">
+<title>..:: Discografia ::..</title>
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('iframe');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+
+function show2(elementID) {
+	var ele1 = document.getElementById(elementID);
+    if (!ele1) {
+        alert("no such element");
+        return;
+    }
+
+    var pages1 = document.getElementsByClassName('goto');
+    for(var i = 0; i < pages1.length; i++) {
+        pages1[i].style.display = 'none';
+    }
+    ele1.style.display = 'block';
+}
+
+function over1() {
+  document.getElementById("trapezoid2").style.color = "red";
+}
+
+function out1() {
+  document.getElementById("trapezoid2").style.color = "black";
+}
+
+function over2() {
+  document.getElementById("trapezoid").style.color = "red";
+}
+
+function out2() {
+  document.getElementById("trapezoid").style.color = "gray";
+}
+
+function over3() {
+  document.getElementById("trapezoid").style.color = "red";
+}
+
+function out3() {
+  document.getElementById("trapezoid").style.color = "black";
+}
+
+function over4() {
+  document.getElementById("trapezoid2").style.color = "red";
+}
+
+function out4() {
+  document.getElementById("trapezoid2").style.color = "gray";
+}
+
+function change1()
+{
+	document.getElementById("trapezoid").removeEventListener("mouseover", over3);
+	document.getElementById("trapezoid").removeEventListener("mouseout", out3);
+	document.getElementById("trapezoid2").removeEventListener("mouseover", over4);
+	document.getElementById("trapezoid2").removeEventListener("mouseout", out4);
+	document.getElementById("trapezoid2").addEventListener("mouseover", over1);
+	document.getElementById("trapezoid2").addEventListener("mouseout", out1);
+	document.getElementById("trapezoid").addEventListener("mouseover", over2);
+	document.getElementById("trapezoid").addEventListener("mouseout", out2);
+    document.getElementById('Page1').style="position: absolute; border: 0px; background-color: white; width: 90%; margin: 0% 5% 0%; display: none;"
+    document.getElementById('trapezoid').style="border-bottom: 50px solid lightgray; color: gray;"
+    document.getElementById('Page2').style="position: relative; border: 0px; background-color: white; width: 90%; margin: 0% 5% 0%; display: block;"
+    document.getElementById('trapezoid2').style="border-bottom: 50px solid white; color: black;"
+
+}
+
+function change2()
+{
+	document.getElementById("trapezoid2").removeEventListener("mouseover", over1);
+	document.getElementById("trapezoid2").removeEventListener("mouseout", out1);
+	document.getElementById("trapezoid").removeEventListener("mouseover", over2);
+	document.getElementById("trapezoid").removeEventListener("mouseout", out2);
+	document.getElementById("trapezoid").addEventListener("mouseover", over3);
+	document.getElementById("trapezoid").addEventListener("mouseout", out3);
+	document.getElementById("trapezoid2").addEventListener("mouseover", over4);
+	document.getElementById("trapezoid2").addEventListener("mouseout", out4);
+    document.getElementById('Page2').style="position: absolute; border: 0px; background-color: white; width: 90%; margin: 0% 5% 0%; display: none;"
+    document.getElementById('trapezoid2').style="border-bottom: 50px solid lightgray; color: gray;"
+    document.getElementById('Page1').style="position: relative; border: 0px; background-color: white; width: 90%; margin: 0% 5% 0%; display: block;"
+    document.getElementById('trapezoid').style="border-bottom: 50px solid white; color: black;"
+}
+</script>
+</head>
+<body style="background-image: url(Images/Discografia1.png), url(Images/Discografia2.png);
+  background-position: center top, center bottom;
+  background-repeat: no-repeat, repeat;">
+<header>
+<table>
+<tr>
+<td width="80%" style="vertical-align:top">
+<a href="index.html" class="animation"><img src="Images/RV.png" width="50" height="50" style="vertical-align: middle; margin: 0% 0% 0% 0%">
+<font size="3" face="sans" style="rgba(255,255,255,0)">Voltar a Página Inicial</font></a>
+</td>
+<td style="vertical-align:top">
+<a href="Discografia.html" class="membros"><font size="4" class="Orator" color="white"> DISCOGRAFIA </font></a>
+</td>
+<td style="vertical-align:top">
+<a href="Membros.html" class="membros"><font size="4" class="Orator" color="white"> MEMBROS </font></a>
+</td>
+<td style="vertical-align:top">
+<a href="Lyrics.html" class="membros"><font size="4" class="Orator" color="white">  LETRAS/LYRICS </font></a></p>
+</td>
+</tr>
+</table>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="goto1" class="goto" align="center" style="z-index: 6">
+	<font face="sans" size="5" align="center">
+	<center>
+		<a href="#2014" align="center"> 2014 </a>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<a href="#2015"> 2015 </a>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<a href="#2016"> 2016 </a>
+	</center>
+	</font>
+</div>
+<div id="goto2" class="goto" align="center" style="z-index: 6; display: none">
+	<font face="sans" size="5" align="center">
+	<center>
+		<a href="#2017"> 2017 </a>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<a href="#2018"> 2018 </a>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<div class="ball"></div>
+		<a href="#2019"> 2019 </a>
+	</center>
+	</font>
+</div>
+<table style="margin: 0% 5% 0%; border-collapse: collapse; border-spacing: 0">
+<td style="padding: 0; margin: 0;">
+<a class="next" href="#trapezoid"><div id="trapezoid" onclick="show2('goto1'); change2();" onmouseover="over3()" onmouseout="out3()"><font face="sans" size="5" align="center">2014 - 2016</font></div></a>
+</td>
+<td style="padding: 0; margin: 0;">
+<a class="next" href="#trapezoid2"><div id="trapezoid2" onclick="show2('goto2'); change1()" onmouseover="over4()" onmouseout="out4()"><font face="sans" size="5" align="center">2017 - 2019</font></div></a>
+</td>
+</table>
+<div id="Page1" class="boxed2">
+<fieldset width="95%" style="border-top: 10px dashed #ffdd4d; border-left: none; border-bottom: none; border-right: none; margin: 0%">
+<legend style="padding: 0px 25px" align="center">
+<font color="red" face="sans"><h1><i><a id="2014">2014</a></i></h1></font>
+</legend>
+</fieldset>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Happiness</font></H1></p><br><br>
+<p align="center"><img src='Images/Happiness album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/6MMkaYzyM0aLZmDBce3nL6?si=LUccDoSqRwWI-4IrYozzKA" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<section>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Be Natural</font></H1></p><br><br>
+<p align="center"><img src='Images/Be Natural album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/4OeQ9nilS4Sy3efzt0hVFi?si=hfBlkA6QSYCEpCWjTO55ww" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br></section><br>
+
+<fieldset width="95%" style="border-top: 10px dashed #ffdd4d; border-left: none; border-bottom: none; border-right: none; margin: 0%">
+<legend style="padding: 0px 25px" align="center">
+<font color="red" face="sans"><h1><i><a id="2015">2015</a></i></h1></font>
+</legend>
+</fieldset>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Ice Cream Cake</font></H1></p><br><br>
+<p align="center"><img src='Images/Ice Cream Cake album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/27cBQ5FDqv0xLgiJ7qNpZr?si=V9jqTr67RN6XpCoBKJkYrA" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">The Red</font></H1></p><br><br>
+<p align="center"><img src='Images/The Red album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/6YL9J0E6PGtYzkhyMxnmXd?si=tlasxMgxRO-U9tqrU-gjdA" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Winter Garden</font></H1></p><br><br>
+<p align="center"><img src='Images/Winter Garden album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/69a7YNzhApHfLFwHvPkCso?si=UMHIFhtpSIeJf6I1RPJlJQ" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<fieldset width="95%" style="border-top: 10px dashed #ffdd4d; border-left: none; border-bottom: none; border-right: none; margin: 0%">
+<legend style="padding: 0px 25px" align="center">
+<font color="red" face="sans"><h1><i><a id="2016">2016</a></i></h1></font>
+</legend>
+</fieldset>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">The Velvet</font></H1></p><br><br>
+<p align="center"><img src='Images/The Velvet album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/2qgl7dAgslqL1w2l2wQhMA?si=K7Y3UlLrRvaWF9wi2LBjlg" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Russian Roulette</font></H1></p><br><br>
+<p align="center"><img src='Images/Russian Roulette album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/6MNlcai3skKLKv5syzFwC3?si=kTzqiO63Ruqe7gJWPzSGNQ" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+<p style="text-align: right; padding: 0% 2% 0%"><font face="sans" size="6px"><a onclick="show2('goto2'); change1()" class="next">2017-2019 -></a></font></p>
+<br><br>
+</div>
+
+<div id="Page2" class="boxed2">
+<fieldset width="95%" style="border-top: 10px dashed #ffdd4d; border-left: none; border-bottom: none; border-right: none; margin: 0%">
+<legend style="padding: 0px 25px" align="center">
+<font color="red" face="sans"><h1><i><a id="2017">2017</a></i></h1></font>
+</legend>
+</fieldset>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Rookie</font></H1></p><br><br>
+<p align="center"><img src='Images/Rookie album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/5Bg49LEfyoZzKpQsEwRCtI?si=7yb1lT1DQa2ZipSy_vfMiw" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Would You</font></H1></p><br><br>
+<p align="center"><img src='Images/Would U album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/55Pg6r2oJfQaVm3yzhgZsG?si=AJK36jmhRYytYQ-NG8zkXQ" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">The Red Summer</font></H1></p><br><br>
+<p align="center"><img src='Images/The Red Summer album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/6OXg149IkmbgW7zfzbwgS2?si=rvh_xQ6JTqOwGuSZAh9t6Q" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Rebirth</font></H1></p><br><br>
+<p align="center"><img src='Images/Rebirth album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/3N2kQMt5yVXyGAVUDxzqup?si=QdhYUYReR96kg61Erhnx1Q" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Perfect Velvet</font></H1></p><br><br>
+<p align="center"><img src='Images/Perfect Velvet album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/0rvrbZvaDX5S9ZBhwOwFfH?si=V7L6wnJ1R227ZRwkKiY-EA" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<fieldset width="95%" style="border-top: 10px dashed #ffdd4d; border-left: none; border-bottom: none; border-right: none; margin: 0%">
+<legend style="padding: 0px 25px" align="center">
+<font color="red" face="sans"><h1><i><a id="2018">2018</a></i></h1></font>
+</legend>
+</fieldset>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">The Perfect Red Velvet</font></H1></p><br><br>
+<p align="center"><img src='Images/The Perfect Red Velvet album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/0OkJThJls8FO1lutMzMDJ0?si=2DQQGVtCRXaEoIPcVs4qdQ" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">#Cookie Jar</font></H1></p><br><br>
+<p align="center"><img src='Images/Cookie Jar album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/4W6K0DP1YlZ48JlvdKCkZh?si=kI7dQ1SkTCmnJyI557MGkw" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Summer Magic</font></H1></p><br><br>
+<p align="center"><img src='Images/Summer Magic album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/5zWa1ZEUBctbKqvwXbFawo?si=Ppay2MavQju4Sv9V0FAS9A" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">RBB (Really Bad Boy)</font></H1></p><br><br>
+<p align="center"><img src='Images/RBB album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/7rNIvLwIpB2mwOzk20iqIl?si=mISEFo0cQY6vV5DTCTPn5g" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<fieldset width="95%" style="border-top: 10px dashed #ffdd4d; border-left: none; border-bottom: none; border-right: none; margin: 0%">
+<legend style="padding: 0px 25px" align="center">
+<font color="red" face="sans"><h1><i><a id="2019">2019</a></i></h1></font>
+</legend>
+</fieldset>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">Sappy</font></H1></p><br><br>
+<p align="center"><img src='Images/Sappy album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/4n2UdASUneo56k6Uk5ZRIb?si=s5PvCOHaSrK9KSM7FKG9Rg" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px; margin: 0px 0px -15px 0px"><font color="white">The ReVe Festival: Day 1</font></H1></p><br><br>
+<p align="center"><img src='Images/ReveFestival album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/2nLEiP268mSFZHW5dajM4R?si=_1nalQOdQxyVlU0OXbExWw" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+
+<hr width="95%" style="border-top: 5px dashed #ffdd4d; border-right: none; border-bottom: none; border-left: none"></hr>
+
+<br>
+<p align="center"><H1 class="MADE element" align="center" style="font-size: 65px;margin: 0px 0px -15px 0px"><font color="white">The ReVe Festival: Day 2</font></H1></p><br><br>
+<p align="center"><img src='Images/ReveFestivalDay2 album cover.png' width='875' height='450' align='middle'></p><br>
+<div class="boxed" align="middle"><p align="middle"><font size='6' face="sans"> Ouça o álbum:</font><br><br>
+<iframe id="spotify" src="https://open.spotify.com/embed/album/3DXz6ItR9DzIw9S0h3Cxfc?si=OFYa5hsyRX6SfBvuJ4gR1A" width="80%" height="80" frameborder="0" style="border-radius: 20px" allowtransparency="true" allow="encrypted-media"></iframe></p></div><br><br>
+<p style="text-align: left; padding: 0% 2% 0%"><font face="sans" size="6px"><a onclick="show2('goto1'); change2()" class="next"><- 2014-2016</a></font></p>
+<br><br>
+</div>
+<footer class="foot" style="background-image: url(Images/FooterBG.png)">
+<table width="100%">
+	<tr>
+		<td width="25%" align="center" style="vertical-align: top" rowspan="6"><a href="index.html"><img src="Images/RV.png" width="150px"></a></td>
+		<td width="25%" align="center"><font face="sans" size="6px"><b>Membros</b></font></td>
+		<td width="25%" align="center"><font face="sans" size="6px"><b>Redes Sociais</b></font></td>
+		<td width="25%" align="center"><font face="sans" size="6px"><b>Outros Links</b></font></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><font face="sans" size="5px"><a href="Irene.html" class="member">Irene</a></font></td>
+		<td width="25%" align="center" style="vertical-align: top" rowspan="6">
+			<a href="https://www.youtube.com/channel/UCk9GmdlDTBfgGRb7vXeRMoQ" class="rs tooltip" target="_blank" data-title="Red Velvet Youtube">
+				<img src="Images/YoutubeFooter.png" width="50px" style="margin: 0% 4%" target="_blank">
+			</a>
+			<a href="https://twitter.com/rvsmtown" class="rs tooltip" data-title="Red Velvet Twitter" target="_blank">
+				<img src="Images/TwitterFooter.png" width="50px" style="margin: 0% 4%">
+			</a>
+			<a href="https://www.instagram.com/redvelvet.smtown/?hl=pt-br" class="rs tooltip" data-title="Red Velvet Instagram" target="_blank">
+				<img src="Images/InstaFooter.png" width="50px" style="margin: 0% 4%">
+			</a>
+		</td>
+		<td width="25%" align="center" style="vertical-align: top" rowspan="6">
+			<a href="https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM?si=kNcRmskIRtCn161N5ps46Q" class="rs tooltip" data-title="Red Velvet Spotify" target="_blank">
+				<img src="Images/SpotifyFooter.png" width="50px" style="margin: 0% 4%" target="_blank">
+			</a>
+			<a href="http://redvelvet.smtown.com/" class="rs tooltip" data-title="Red Velvet Official Website" target="_blank">
+				<img src="Images/WebsiteFooter.png" width="50px" style="margin: 0% 4%" target="_blank">
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><font face="sans" size="5px"><a href="Seulgi.html" class="member">Seulgi</a></font></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><font face="sans" size="5px"><a href="Wendy.html" class="member">Wendy</a></font></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><font face="sans" size="5px"><a href="Joy.html" class="member">Joy</a></font></td>
+	</tr>
+	<tr>
+		<td width="25%" align="center"><font face="sans" size="5px"><a href="Yeri.html" class="member">Yeri</a></font></td>
+	</tr>
+</table>
+</footer>
+</body>
+</html>

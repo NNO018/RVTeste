@@ -1,0 +1,6 @@
+Cores:
+Irene: <font color="ff6ea7">
+Seulgi: <font color="f18545">
+Wendy: <font color="007ccb">
+Joy: <font color="1a9f00">
+Yeri: <font color="6d06b6">

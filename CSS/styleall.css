@@ -1,0 +1,198 @@
+/* Red Velvet HTML Website */
+
+/* Header */
+@keyframes hover {
+  0% {color: rgba(255,255,255,0); animation-duration: .2s;}
+  100% {color: rgba(255,255,255,1); animation-duration: .2s;}
+  }
+  
+a.animation:link, a.animation:visited {
+  text-decoration: none;
+  color: rgba(255,255,255,0);
+  transition-duration: .2s;
+  font-family: sans;
+  animation-duration: .2s;
+  }
+  
+a.animation:hover, a.animation:active {
+  animation-name: hover;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  transition-duration: .2s;
+  }  
+  
+a.membros:link, a.membros:visited{
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #E79A8E;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  }
+  
+a.membros:hover, a.membros:active{
+  border-top-style: solid;
+  border-top-color: #F37370;
+  border-top-width: 3px;
+  background-color: rgba(255,200,200,0.5);
+}
+
+/* Font Formatting */
+@font-face {
+  font-family: "MADE";
+  src: url(../Fonts/MADE_GoodTimeScript.otf) format("opentype");
+  font-size:3;
+ }
+ 
+.MADE{
+  font-family: "MADE";
+  font-size: 3;
+  }
+
+@font-face {
+  font-family: "Orator";
+  src: url(../Fonts/OratorStd.otf) format("opentype");
+  font-size:3;
+ }
+ 
+.Orator{
+  font-family: "Orator";
+  font-size: 3;
+  }
+  
+@font-face {
+  font-family: "Sans";
+  src: url(../Fonts/JosefinSansRegular.ttf) format("truetype");
+}
+ 
+.sans {
+  font-family: "Sans";
+  }
+  
+@font-face {
+  font-family: "amplify";
+  src: url(../Fonts/AmplifyPersonalUseOnly.ttf) format("truetype");
+ }
+ 
+h1.amplify {
+  font-family: "amplify";
+  }
+@font-face {
+  font-family: "Ladylike";
+  src: url(../Fonts/LadylikeBB.ttf) format("truetype");
+  }
+  
+.lady {
+ font-family: "Ladylike";
+ }
+
+@font-face {
+  font-family: "Dotum";
+  src: url(../Fonts/UnDotum.ttf) format("opentype");
+}
+ 
+.dotum {
+  font-family: "Dotum";
+  }
+
+/* Footer */
+.foot {
+    position: relative;
+    background-image: url(../Images/FooterBG.png);
+    background-repeat: repeat;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
+    padding: 2% 1%;
+    z-index: 5;
+}
+
+.member {
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+
+.member:hover {
+    text-decoration: none;
+    color: rgb(255,100,100);
+}
+
+.rs {
+    text-decoration: none;
+    background-color: none;
+}
+
+.rs:hover {
+    text-decoration: none;
+    background-color: none;
+    filter: hue-rotate(40deg);
+}
+
+a.tooltip {
+  text-decoration: none;
+  color: none;
+  font-family: "sans";
+  font-size: 16px;
+  transition: all 0.4s ease;
+  -webkit-transition: all .4s ease;
+  padding: 5px;
+  background-color: none;
+  position: relative;
+}
+a.tooltip:before {
+  content: attr(data-title);
+  background-color: rgb(100,100,100);
+  color: #FFF;
+  font-size: 13px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "sans";
+  position: absolute;
+  left: 0;
+  bottom: -130%;
+  width: 200%;
+  opacity: 0;
+  transition: all .4s ease;
+}
+a.tooltip:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  left: 37.5%;
+  bottom: -10%;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent rgb(100,100,100) transparent;
+  transition: all .4s ease;
+}
+a.tooltip:hover:after,
+a.tooltip:hover:before {
+  opacity: 1;
+}
+
+/* General */
+body {	
+ overflow: none;
+ margin: 0% 0% 0% 0%;
+ background-size: 100%;
+ padding: 0%;
+ }
+
+@media screen and (max-width:1000px) {
+
+    html {
+        zoom: 150%;
+    }
+
+    body {
+        background-position: center top;
+        margin: 0%;
+        padding: 0%;
+    }
+}
